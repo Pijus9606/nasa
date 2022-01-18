@@ -1,5 +1,7 @@
 import React from 'react';
 import SpacePost from './SpacePost'
+import './Nasa.css';
+
 
 const URL = "https://api.nasa.gov/planetary/apod";
 
@@ -37,12 +39,15 @@ export default class Clock extends React.Component {
 
   render() {
     if (this.state.isloading) {
-      return <div>loading</div>
+      return <div>...loading...</div>
     }
 
     return (
-      <div>
+      <div id="body">
         <h1>Hello, world! This is Spacestagram.</h1>
+        <h2>"Only in the darkness can you see the stars"</h2>
+        <br></br>
+        <br></br>
         {this.state.spacePosts.map((post) => {
           return (
             <SpacePost

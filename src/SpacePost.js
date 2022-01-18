@@ -17,18 +17,21 @@ export default class Clock extends React.Component {
       return this.props.img;
     } 
     
-    return this.props.thumbnail
+    return this.props.thumbnail;
   }
 
   render() {
 
     return (
-      <div>
-        <h2>This picture is called "{this.props.title}".</h2>
+      <div id="post">
+        <img id="logo" src='http://assets.stickpng.com/images/58429400a6515b1e0ad75acc.png' />
+        <br></br>
+        <img id="pictures" src={this.getImageSource()} />
+        <br></br>
+        <button id="like" onClick={this.like}>Like</button>
+        <button id="unlike" onClick={this.unlike}>Unlike</button>
+        <h3>This picture is called "{this.props.title}".</h3>
         <h4>It was taken on {this.props.date}</h4>
-        <img src={this.getImageSource()} />
-        <button onClick={this.like}>Like</button>
-        <button onClick={this.unlike}>Unlike</button>
         {this.state.isliked &&
           <p>
             I like this picture!

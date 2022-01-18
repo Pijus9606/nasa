@@ -1,0 +1,110 @@
+h1 {
+  font-size: 3em;
+  text-align: left;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 1em;
+  text-align: left;
+}
+
+h3 {
+font-size: 1em;
+text-align: center;
+padding: 5em 0em 0em 0em;
+}
+
+h4 {
+  font-size: 1em;
+  text-align: center;
+  }
+
+p {
+font-size: 1em;
+margin: 2em 3em 8em 3em;
+text-align: left;
+line-height: 1.7em;
+}
+
+#logo {
+  width: 3em;
+  align-items: center;
+  padding: 1em;
+}
+
+#pictures {
+  width: 30em;
+  max-height: 30em;
+  margin: 0em 5em 1em 5em;
+  border-radius: 10px;
+}
+
+#like {
+  background-color: rgb(22, 10, 73);
+  float: left;
+  margin: 0.5em 0em 0em 9em;
+  border-radius: 25px;
+  color: white;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.7em;
+}
+
+#like:hover {
+  background-color: beige;
+  color: black;
+}
+
+#unlike {
+  background-color: rgb(22, 10, 73);
+  float: left;
+  margin: 0.5em 0em 0em 1em;
+  border-radius: 25px;
+  color: white;
+  padding: 1em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.7em;
+}
+
+#unlike:hover {
+  background-color: beige;
+  color: black;
+}
+
+#post {
+border-width: 0.5em;
+border-style:solid;
+border-color: rgb(22, 10, 73);
+background-color: white;
+}
+
+#topnav {
+  background-image:url("https://c0.wallpaperflare.com/preview/739/467/791/4k-wallpaper-astro-astrology-astronomy.jpg");
+  overflow: hidden;
+  height: 6em;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#name:hover {
+  color: black;
+}
+
+#name {
+  float:left;
+  text-align: center;
+  padding: 0em;
+  margin: 0.6em;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: cursive;
+  font-style: italic;
+  color: white;
+}

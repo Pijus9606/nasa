@@ -6,6 +6,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <div id="topnav">
+      <a id="name" href="./">Spacestagram</a>
+      </div>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
