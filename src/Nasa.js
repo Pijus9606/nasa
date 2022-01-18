@@ -1,4 +1,5 @@
 import React from 'react';
+import SpacePost from './SpacePost'
 
 const URL = "https://api.nasa.gov/planetary/apod";
 
@@ -12,8 +13,7 @@ export default class Clock extends React.Component {
       img: "",
       date: "",
       explanation: "",
-      isloading: true,
-      isliked: false
+      isloading: true
     };
   }
 
@@ -25,9 +25,6 @@ export default class Clock extends React.Component {
     });
   }
 
-  unlike = () => this.setState({isliked: false});
-  like = () => this.setState({isliked: true});
-
   render() {
     if (this.state.isloading) {
       return <div>loading</div>
@@ -36,17 +33,7 @@ export default class Clock extends React.Component {
     return (
       <div>
         <h1>Hello, world! This is Spacestagram.</h1>
-        <h2>This picture is called "{this.state.title}".</h2>
-        <h4>It was taken on {this.state.date}</h4>
-        <img src={this.state.img}/>
-        <button onClick={this.like}>Like</button>
-        <button onClick={this.unlike}>Unlike</button>
-        {this.state.isliked &&
-        <p>
-          I like this picture!
-        </p>
-        }
-        <p>{this.state.explanation}</p>
+       <SpacePost title={this.state.title} date={this.state.date} img={this.state.img} explanation={this.state.explanation}/>
       </div>
     )
   }
