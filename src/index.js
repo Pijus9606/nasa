@@ -10,6 +10,9 @@ ReactDOM.render(
       <a id="name" href="./">Spacestagram</a>
       </div>
     <App />
+    <div id="botnav">
+      <a>.</a>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

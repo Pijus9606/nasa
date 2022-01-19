@@ -12,10 +12,8 @@ const DATETWO = "&end_date=";
 
 var today = new Date();
 var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-var yesterday = new Date(new Date().setDate(new Date().getDate() - 10));
+var yesterday = new Date(new Date().setDate(new Date().getDate() - 20));
 var yesterdayDate = yesterday.getFullYear() + '-' + (yesterday.getMonth() + 1) + '-' + yesterday.getDate();
-
-
 const startDay = yesterdayDate;
 const endDay = date;
 
@@ -39,7 +37,7 @@ export default class Clock extends React.Component {
 
   render() {
     if (this.state.isloading) {
-      return <div>...loading...</div>
+      return <div>...Spacestagram is getting ready to launch...</div>
     }
 
     return (

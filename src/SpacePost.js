@@ -21,22 +21,21 @@ export default class Clock extends React.Component {
   }
 
   render() {
-
     return (
       <div id="post">
-        <img id="logo" src='http://assets.stickpng.com/images/58429400a6515b1e0ad75acc.png' />
+        <img id="logo" src='https://logos-world.net/wp-content/uploads/2020/05/NASA-Logo-1975-1992.png' />
         <br></br>
         <img id="pictures" src={this.getImageSource()} />
         <br></br>
         <button id="like" onClick={this.like}>Like</button>
         <button id="unlike" onClick={this.unlike}>Unlike</button>
-        <h3>This picture is called "{this.props.title}".</h3>
-        <h4>It was taken on {this.props.date}</h4>
         {this.state.isliked &&
-          <p>
+          <p id="pop">
             I like this picture!
           </p>
         }
+        <h3>This picture is called "{this.props.title}".</h3>
+        <h4>It was taken on {this.props.date}</h4>
         <p>{this.props.explanation}</p>
       </div>
     )
